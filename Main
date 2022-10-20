@@ -2,7 +2,7 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("KeeperHub", "DarkTheme")
 
 --// Toggle Gui
-Settings:NewKeybind("Toggle GUI", "Toggles script visibility.", Enum.KeyCode.V, function()
+SettingsSection:NewKeybind("Toggle GUI", "Toggles script visibility.", Enum.KeyCode.V, function()
 	Library:ToggleUI()
 end)
 
@@ -94,7 +94,7 @@ end)
 --// SETTINGS TAB
 
 for theme, color in pairs(themes) do
-    Section:NewColorPicker(theme, "Change your "..theme, color, function(color3)
+    SettingsSection:NewColorPicker(theme, "Change your "..theme, color, function(color3)
         Library:ChangeColor(theme, color3)
     end)
 end
