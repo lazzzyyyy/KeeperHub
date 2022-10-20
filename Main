@@ -1,0 +1,81 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("KeeperHub", "DarkTheme")
+
+--// Tabs & Sections
+local Main = Window:NewTab("Main")
+local Teleports = Window:NewTab("Teleports")
+local MainSection = Main:NewSection("Main Scripts")
+local TeleportsSection = Teleports:NewSection("Teleports")
+
+--// MAIN TAB
+
+MainSection:NewButton("Fly", "Loads shazam fly.", function()
+    _G.ShazamFlySpeed = 3
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/Raycodex/Exploiting/main/Roblox/DaHoodShazamFly"), true))()
+end)
+
+MainSection:NewButton("ChatSpy", "Loads chatspy.", function()
+    loadstring(game:HttpGet("https://pastebin.com/1wjq3NpQ", true))()
+end)
+
+MainSection:NewButton("AntiStomp [K]", "Loads Antistomp.", function()
+    loadstring(game:HttpGet("https://pastebin.com/6r3Hj0ZJ", true))()
+end)
+
+MainSection:NewToggle("AntiLock", "Loads antilock.", function(state)
+    loadstring(game:HttpGet("https://pastebin.com/VpAbK4U8", true))()
+end)
+
+--// TELEPORTS TAB
+
+TeleportsSection:NewButton("Admin", "Teleports to Admin.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-872.03, -38.3992, -585.26)
+end)
+ 
+TeleportsSection:NewButton("Bank", "Teleports to Bank.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-402.433, 21.75, -286.213)
+end)
+ 
+TeleportsSection:NewButton("Basket", "Teleports to Basketball Court.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-932.03, 22.0998, -482.54)
+end)
+ 
+TeleportsSection:NewButton("Grave", "Teleports to Grave.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(177.885, 21.75, 55.1252)
+end)
+ 
+TeleportsSection:NewButton("Safe Zone", "Teleports to Safe Zone 3.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3.58, 11.75, 200.03)
+end)
+ 
+TeleportsSection:NewButton("Train", "Teleports to Train.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(595.815, 48, -113.703)
+end)
+ 
+TeleportsSection:NewButton("AK", "Teleports to AK.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-581.798, 8.31478, -736.71)
+end)
+ 
+TeleportsSection:NewButton("Uphill", "Teleports to Uphill.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(482.004, 48.0705, -621.952)
+end)
+ 
+TeleportsSection:NewButton("Jail", "Teleports to Jail.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-304.126, 22.6077, -23.5668)
+end)
+ 
+TeleportsSection:NewButton("DB", "Teleports to DB.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1043.18, 21.75, -262.826)
+end)
+ 
+TeleportsSection:NewButton("Rev", "Teleports to Revolver.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-643.233, 21.75, -123.552)
+end)
+ 
+TeleportsSection:NewButton("School", "Teleports to School.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-587.184, 21.375, 198.569)
+end)
+ 
+TeleportsSection:NewButton("Heavy Armor", "Teleports to Heavy Armor.", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-934.007, -28.5, 565.465)
+end)
