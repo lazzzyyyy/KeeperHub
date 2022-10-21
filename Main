@@ -1,11 +1,6 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("KeeperHub", "DarkTheme")
 
---// Toggle Gui
-SettingsSection:NewKeybind("Toggle GUI", "Toggles script visibility.", Enum.KeyCode.V, function()
-	Library:ToggleUI()
-end)
-
 --// Tabs & Sections
 local Main = Window:NewTab("Main")
 local Teleports = Window:NewTab("Teleports")
@@ -98,3 +93,7 @@ for theme, color in pairs(themes) do
         Library:ChangeColor(theme, color3)
     end)
 end
+
+SettingsSection:NewKeybind("Toggle GUI", "Toggles script visibility.", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
