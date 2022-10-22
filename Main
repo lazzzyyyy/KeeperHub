@@ -17,15 +17,15 @@ MainSection:NewButton("Fly", "Loads shazam fly.", function()
 end)
 
 MainSection:NewButton("ChatSpy", "Loads chatspy.", function()
-    loadstring(game:HttpGet("https://pastebin.com/1wjq3NpQ", true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/1wjq3NpQ", true))()
 end)
 
 MainSection:NewButton("AntiStomp [K]", "Loads Antistomp.", function()
-    loadstring(game:HttpGet("https://pastebin.com/6r3Hj0ZJ", true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/6r3Hj0ZJ", true))()
 end)
 
 MainSection:NewToggle("AntiLock", "Loads antilock.", function(state)
-    loadstring(game:HttpGet("https://pastebin.com/VpAbK4U8", true))()
+    loadstring(game:HttpGet("https://pastebin.com/raw/VpAbK4U8", true))()
 end)
 
 --// TELEPORTS TAB
